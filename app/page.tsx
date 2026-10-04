@@ -1,4 +1,5 @@
 import CategoriesCards from "@/components/categories-cards";
+import FeaturedEvent from "@/components/featured-event";
 import HeroHeader from "@/components/hero-header";
 import TextSlider from "@/components/text-slider";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroHeader />
       <TextSlider />
       <CategoriesCards />
+      <FeaturedEvent />
     </div>
   );
 }
