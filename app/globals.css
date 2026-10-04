@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Graphie";
+  src: url("/fonts/graphie/Graphie-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("/fonts/graphie/Graphie-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphie";
+  src: url("/fonts/graphie/Graphie-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-yellow: #F9CF00;
   --color-orange: #EB8739;
@@ -7,10 +31,9 @@
   --color-teal: #009277;
   --color-red: #DE3E32;
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-graphie: "Graphie", sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-graphie);
 }
