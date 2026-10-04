@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeroHeader() {
     return (
-        <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] flex items-center">
+        <section className="relative w-full min-h-[60vh] flex items-center">
             <div className="absolute inset-0 z-0">
                 <Image src="/assets/san-aguistin-fachada.png" alt="Fachada de Plaza Fiesta San Agustín" fill priority className="object-cover" />
                 <div className="absolute inset-0 bg-black/30" />
