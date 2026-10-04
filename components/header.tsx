@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -16,7 +16,7 @@ export default function Header() {
   ];
 
   return (
-    <header>
+    <header className="mx-auto max-w-400">
       <nav className="flex items-center justify-between px-10 py-3">
         <Link href="/" className="flex items-center">
           <Image src="/plaza-fiesta-san-aguistin.svg" alt="Logo de Plaza Fiesta San Agustín" width={70} height={70} />
