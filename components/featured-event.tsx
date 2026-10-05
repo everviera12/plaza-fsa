@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar, Clock, MapPin } from "lucide-react";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 export default function FeaturedEvent() {
   return (
@@ -19,33 +19,18 @@ export default function FeaturedEvent() {
             />
           </div>
 
-          <div className="space-y-6">
-            <span className="inline-block text-sm font-semibold text-blue uppercase tracking-wider">Evento destacado</span>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Taller Decora tu Piñata
-            </h2>
-
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+          <div className="grid gap-6">
+            <div className="space-y-3">
+              <span className="inline-block text-sm font-semibold text-teal uppercase tracking-wider">Evento destacado</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Taller Decora tu Piñata</h2>
               <p>
                 ¡Dale tu toque a una piñata única! Ven a disfrutar de nuestro Taller Decora tu
                 Piñata, una tarde para dejar volar la creatividad y crear un diseño muy especial.
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-gray-200">
-              <div className="flex items-center gap-2 text-gray-600">
-                <Calendar className="h-5 w-5 text-blue flex-shrink-0" aria-hidden="true" />
-                <span className="font-medium">03 de octubre</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-600">
-                <Clock className="h-5 w-5 text-blue flex-shrink-0" aria-hidden="true" />
-                <span className="font-medium">3:00 pm</span>
-              </div>
-            </div>
-
             <Link href="/eventos"
-              className="inline-flex items-center gap-2 rounded-full bg-teal px-8 py-2 text-base font-semibold text-white"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-teal px-8 py-2 text-base font-semibold text-white"
             >
               Ver evento
               <ArrowRight className="h-5 w-5" />
