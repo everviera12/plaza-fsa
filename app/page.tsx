@@ -1,4 +1,5 @@
 import CategoriesCards from "@/components/categories-cards";
+import ContactForm from "@/components/contact-form";
 import ContentCTA from "@/components/content-cta";
 import FeaturedEvent from "@/components/featured-event";
 import HeroHeader from "@/components/hero-header";
@@ -12,6 +13,7 @@ export default function Home() {
       <CategoriesCards />
       <FeaturedEvent />
       <ContentCTA />
+      <ContactForm />
     </div>
   );
 }
