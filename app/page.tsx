@@ -1,4 +1,5 @@
 import CategoriesCards from "@/components/categories-cards";
+import ContentCTA from "@/components/content-cta";
 import FeaturedEvent from "@/components/featured-event";
 import HeroHeader from "@/components/hero-header";
 import TextSlider from "@/components/text-slider";
@@ -10,6 +11,7 @@ export default function Home() {
       <TextSlider />
       <CategoriesCards />
       <FeaturedEvent />
+      <ContentCTA />
     </div>
   );
 }
